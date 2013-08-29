@@ -1,0 +1,132 @@
+#ifdef _CH_
+#pragma package <opencv>
+#endif
+
+#ifndef _EiC
+#include "cv.h"
+#include "highgui.h"
+#include "opencv2/imgproc/imgproc_c.h"
+#include <stdio.h>
+#endif
+
+#define ARRAY  1
+
+IplImage* imagen;
+IplImage* roi;
+IplImage* threshold;
+CvMoments moments;
+CvHuMoments humoments;
+
+int main(int argc, char** argv) {
+	if (argc >= 2) {
+		char* filename = argv[1];
+		imagen = cvLoadImage(filename, 0);
+	}
+
+	threshold = cvCreateImage(cvSize(imagen->width, imagen->height),
+			IPL_DEPTH_8U, 1);
+
+	cvCopyImage(imagen, threshold);
+
+	cvInvert(threshold,threshold,CV_THRESH_BINARY_INV);
+//	cvThreshold(threshold, threshold, 0, 255, CV_THRESH_BINARY_INV);
+
+	cvErode(threshold, threshold, NULL, 5);
+	cvDilate(threshold, threshold, NULL, 5);
+
+//	cvNamedWindow("Threshold", CV_WINDOW_AUTOSIZE);
+//	cvShowImage("Threshold", threshold);
+//	cvWaitKey(0);
+
+
+//	CvScalar elemento;
+//
+//	int brancos = 0;
+//	int i, j, x1, x2, y1, y2;
+//	for (i = 0; i < threshold->height; i++) {
+//		for (j = 0; j < threshold->width; j++) {
+//			elemento = cvGet2D(threshold, i, j);
+//			if (elemento.val[0] == 255) {
+//				if (brancos == 0) {
+//					y1 = y2 =i;
+//					x1 = x2 = j;
+//				} else {
+//					if (i > y2) {
+//						y2 = i;
+//					}
+//					if (j < x1) {
+//						x1 = j;
+//					}
+//					if (j > x2) {
+//						x2 = j;
+//					}
+//				}
+//				brancos++;
+//			}
+//		}
+//	}
+//
+//
+//	//pegando apenas a area da imagen...
+//	roi=cvCreateImage(cvSize(x2-x1,y2-y1),IPL_DEPTH_8U, 1);
+//	cvSetImageROI(threshold,cvRect(x1,y1,x2-x1,y2-y1));
+//
+//	cvCopyImage(threshold,roi);
+//	cvResetImageROI(threshold);
+//
+//	//Redimensiondando imagem para 100x100
+//	IplImage* saida=cvCreateImage(cvSize(100,100),roi->depth,roi->nChannels);
+//	cvResize(roi,saida,1);
+//	float histo[100];
+//	for (i = 0; i < 100; i++) {
+//		histo[i]=0;
+//		for (j = 0; j < 100; j++) {
+//			elemento = cvGet2D(saida, i, j);
+//			if (elemento.val[0] == 255) {
+//				histo[i]++;
+//			}
+//		}
+//	}
+//	for (i = 0; i < 100; i=i+10) {
+//		for(j=i;j<i+10;j++){
+//			histo[i]+=histo[j];
+//		}
+////		printf("%f ",histo[i]/1000);
+//	}
+//
+//	for (i = 0; i < 100; i++) {
+//			histo[i]=0;
+//			for (j = 0; j < 100; j++) {
+//				elemento = cvGet2D(saida, j, i);
+//				if (elemento.val[0] == 255) {
+//					histo[i]++;
+//				}
+//			}
+//		}
+//		for (i = 0; i < 100; i=i+10) {
+//			for(j=i;j<i+10;j++){
+//				histo[i]+=histo[j];
+//			}
+////			printf("%f ",histo[i]/1000);
+//		}
+
+
+
+//	CvMemStorage* storage = cvCreateMemStorage(0);
+//	cvClearMemStorage(storage);
+//	CvSeq* first_cont = 0;
+//
+//	CvSeq* contours = 0;
+//	cvFindContours( roi, storage, &contours,1,1,1,cvPoint(1,1) );
+
+//	cvNamedWindow("igm2", 1);
+//	cvShowImage("img2",roi);
+//	cvWaitKey(500);
+
+//	calcular os momentos de hu para cada parte da imagem
+	cvMoments(threshold, &moments, 1);
+	cvGetHuMoments(&moments, &humoments);
+	printf("%f %f %f %f %f %f %f ", humoments.hu1, humoments.hu2, humoments.hu3,humoments.hu4, humoments.hu5, humoments.hu6, humoments.hu7);
+
+	return 0;
+}

@@ -1,0 +1,172 @@
+20 7
+Blob detection and feature extraction
+	ESC - quit the program
+	David Millan Escriva | Damiles
+Avg: 113.181983
+Std: 126.023653
+hu1		hu2		hu3		hu4		hu5		hu6		hu7
+0.241373	0.028981	0.002027	0.000158	-0.000000	-0.000027	-0.000000
+0.177562	0.005533	0.000226	0.000007	-0.000000	-0.000001	0.000000
+1
+Blob detection and feature extraction
+	ESC - quit the program
+	David Millan Escriva | Damiles
+Avg: 99.251798
+Std: 123.588470
+1
+Blob detection and feature extraction
+	ESC - quit the program
+	David Millan Escriva | Damiles
+Avg: 96.460426
+Std: 122.642008
+1
+Blob detection and feature extraction
+	ESC - quit the program
+	David Millan Escriva | Damiles
+Avg: 172.730574
+Std: 118.462047
+hu1		hu2		hu3		hu4		hu5		hu6		hu7
+0.248924	0.029175	0.003379	0.000353	-0.000000	-0.000042	0.000000
+0.192061	0.010006	0.000321	0.000023	-0.000000	-0.000001	0.000000
+1
+Blob detection and feature extraction
+	ESC - quit the program
+	David Millan Escriva | Damiles
+Avg: 182.340845
+Std: 114.420670
+hu1		hu2		hu3		hu4		hu5		hu6		hu7
+0.248822	0.029245	0.003311	0.000345	-0.000000	-0.000041	0.000000
+0.192180	0.010072	0.000313	0.000023	-0.000000	-0.000001	0.000000
+1
+Blob detection and feature extraction
+	ESC - quit the program
+	David Millan Escriva | Damiles
+Avg: 164.025329
+Std: 119.134425
+hu1		hu2		hu3		hu4		hu5		hu6		hu7
+0.159227	0.000018	0.000000	0.000000	-0.000000	0.000000	0.000000
+2
+Blob detection and feature extraction
+	ESC - quit the program
+	David Millan Escriva | Damiles
+Avg: 169.465813
+Std: 117.539087
+hu1		hu2		hu3		hu4		hu5		hu6		hu7
+0.159171	0.000001	0.000000	0.000000	0.000000	-0.000000	-0.000000
+2
+Blob detection and feature extraction
+	ESC - quit the program
+	David Millan Escriva | Damiles
+Avg: 177.768305
+Std: 114.612766
+hu1		hu2		hu3		hu4		hu5		hu6		hu7
+0.159271	0.000033	0.000000	0.000000	0.000000	0.000000	-0.000000
+2
+Blob detection and feature extraction
+	ESC - quit the program
+	David Millan Escriva | Damiles
+Avg: 194.185320
+Std: 106.742738
+hu1		hu2		hu3		hu4		hu5		hu6		hu7
+0.171497	0.001655	0.000000	0.000000	0.000000	-0.000000	-0.000000
+2
+Blob detection and feature extraction
+	ESC - quit the program
+	David Millan Escriva | Damiles
+Avg: 202.721627
+Std: 101.697406
+hu1		hu2		hu3		hu4		hu5		hu6		hu7
+0.159294	0.000039	0.000000	0.000000	0.000000	0.000000	-0.000000
+2
+Blob detection and feature extraction
+	ESC - quit the program
+	David Millan Escriva | Damiles
+Avg: 194.009209
+Std: 108.018871
+hu1		hu2		hu3		hu4		hu5		hu6		hu7
+0.166667	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000
+0.166667	0.000000	0.000000	0.000000	0.000000	0.000000	-0.000000
+0.467602	0.143566	0.051802	0.005408	-0.000085	-0.001976	-0.000032
+0.453966	0.137193	0.044804	0.004618	-0.000063	-0.001663	-0.000020
+3
+Blob detection and feature extraction
+	ESC - quit the program
+	David Millan Escriva | Damiles
+Avg: 209.006383
+Std: 97.137940
+hu1		hu2		hu3		hu4		hu5		hu6		hu7
+0.460096	0.138394	0.048167	0.004937	-0.000076	-0.001837	0.000000
+0.445121	0.129982	0.042369	0.004359	-0.000056	-0.001523	-0.000019
+3
+Blob detection and feature extraction
+	ESC - quit the program
+	David Millan Escriva | Damiles
+Avg: 171.502554
+Std: 118.791673
+hu1		hu2		hu3		hu4		hu5		hu6		hu7
+0.471420	0.144352	0.055262	0.005830	-0.000097	-0.002120	-0.000039
+0.241667	0.030625	0.000000	0.000000	0.000000	-0.000000	0.000000
+0.671718	0.423952	0.000003	0.000002	0.000000	0.000001	-0.000000
+0.453771	0.136349	0.046305	0.004709	-0.000069	-0.001732	-0.000008
+3
+Blob detection and feature extraction
+	ESC - quit the program
+	David Millan Escriva | Damiles
+Avg: 209.696335
+Std: 96.143136
+hu1		hu2		hu3		hu4		hu5		hu6		hu7
+0.168125	0.001105	0.000184	0.000002	-0.000000	-0.000000	0.000000
+0.166590	0.000012	0.000000	0.000000	0.000000	-0.000000	-0.000000
+3
+Blob detection and feature extraction
+	ESC - quit the program
+	David Millan Escriva | Damiles
+Avg: 191.847926
+Std: 108.876722
+hu1		hu2		hu3		hu4		hu5		hu6		hu7
+0.180556	0.004823	0.000000	0.000000	0.000000	-0.000000	0.000000
+0.166527	0.000012	0.000000	0.000000	-0.000000	-0.000000	-0.000000
+3
+Blob detection and feature extraction
+	ESC - quit the program
+	David Millan Escriva | Damiles
+Avg: 153.372913
+Std: 123.639315
+hu1		hu2		hu3		hu4		hu5		hu6		hu7
+0.192119	0.000005	0.004499	0.000000	-0.000000	-0.000000	-0.000000
+4
+Blob detection and feature extraction
+	ESC - quit the program
+	David Millan Escriva | Damiles
+Avg: 198.349408
+Std: 105.352950
+hu1		hu2		hu3		hu4		hu5		hu6		hu7
+0.192593	0.000037	0.004573	0.000001	-0.000000	-0.000000	0.000000
+4
+Blob detection and feature extraction
+	ESC - quit the program
+	David Millan Escriva | Damiles
+Avg: 218.176516
+Std: 89.106345
+hu1		hu2		hu3		hu4		hu5		hu6		hu7
+0.172120	0.001473	0.000220	0.000009	0.000000	0.000000	-0.000000
+0.193634	0.000035	0.004761	0.000001	-0.000000	-0.000000	0.000000
+4
+Blob detection and feature extraction
+	ESC - quit the program
+	David Millan Escriva | Damiles
+Avg: 224.328248
+Std: 80.549820
+hu1		hu2		hu3		hu4		hu5		hu6		hu7
+0.166696	0.000001	0.000000	0.000000	-0.000000	-0.000000	-0.000000
+4
+Blob detection and feature extraction
+	ESC - quit the program
+	David Millan Escriva | Damiles
+Avg: 216.694575
+Std: 89.947722
+hu1		hu2		hu3		hu4		hu5		hu6		hu7
+0.196486	0.001526	0.004708	0.000037	-0.000000	-0.000001	-0.000000
+0.636111	0.376860	0.000000	0.000000	0.000000	0.000000	-0.000000
+10.759698	3.836207	540.185439	2.579701	85.019492	1.213754	-45.225499
+4

@@ -1,0 +1,8 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+USER_OBJS :=
+
+LIBS := -lopencv_calib3d -llibopencv_contrib -llibopencv_core -llibopencv_flann -llibopencv_highgui -llibopencv_gpu -llibopencv_features2d -llibopencv_imgproc -llibopencv_legacy -llibopencv_video -llibopencv_videostab -llibopencv_ml -llibopencv_nonfree -l/libopencv_objdetect -llibopencv_photo -llibopencv_stitching -llibopencv_superres -llibopencv_ts
+

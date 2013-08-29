@@ -1,0 +1,46 @@
+!SESSION 2013-08-29 10:04:30.155 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-08-29 10:05:57.342
+!MESSAGE Indexed 'DisplayImage' (0 sources, 76 headers) in 1,40 sec: 2.142 declarations; 2.324 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0,00%)
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-08-29 10:26:47.167
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-08-29 10:26:47.167
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-08-29 10:26:47.167
+!MESSAGE Software being installed: Eclipse Git Team Provider 3.0.1.201307141637-r (org.eclipse.egit.feature.group 3.0.1.201307141637-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-08-29 10:26:47.167
+!MESSAGE Missing requirement: Eclipse Git Team Provider 3.0.1.201307141637-r (org.eclipse.egit.feature.group 3.0.1.201307141637-r) requires 'org.eclipse.core.runtime [3.7.0,4.0.0)' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-08-29 10:26:47.169
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-08-29 10:26:47.170
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-08-29 10:26:47.170
+!MESSAGE Software being installed: Eclipse Git Team Provider 3.0.1.201307141637-r (org.eclipse.egit.feature.group 3.0.1.201307141637-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-08-29 10:26:47.170
+!MESSAGE Missing requirement: Eclipse Git Team Provider 3.0.1.201307141637-r (org.eclipse.egit.feature.group 3.0.1.201307141637-r) requires 'org.eclipse.core.runtime [3.7.0,4.0.0)' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-08-29 10:27:48.397
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-08-29 10:27:48.397
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-08-29 10:27:48.397
+!MESSAGE Software being installed: Eclipse Git Team Provider 3.0.1.201307141637-r (org.eclipse.egit.feature.group 3.0.1.201307141637-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-08-29 10:27:48.397
+!MESSAGE Missing requirement: Eclipse Git Team Provider 3.0.1.201307141637-r (org.eclipse.egit.feature.group 3.0.1.201307141637-r) requires 'org.eclipse.core.runtime [3.7.0,4.0.0)' but it could not be found
+
+!ENTRY org.eclipse.equinox.p2.operations 4 0 2013-08-29 10:27:48.397
+!MESSAGE Operation details
+!SUBENTRY 1 org.eclipse.equinox.p2.director 4 1 2013-08-29 10:27:48.397
+!MESSAGE Cannot complete the install because one or more required items could not be found.
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-08-29 10:27:48.397
+!MESSAGE Software being installed: Eclipse Git Team Provider 3.0.1.201307141637-r (org.eclipse.egit.feature.group 3.0.1.201307141637-r)
+!SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-08-29 10:27:48.397
+!MESSAGE Missing requirement: Eclipse Git Team Provider 3.0.1.201307141637-r (org.eclipse.egit.feature.group 3.0.1.201307141637-r) requires 'org.eclipse.core.runtime [3.7.0,4.0.0)' but it could not be found

@@ -1,0 +1,1 @@
+/usr/bin/gcc     CMakeFiles/seg_tutorial.dir/main.o  -o seg_tutorial -rdynamic -L/usr/local/lib -lcxcore -lcv -lml -lhighgui -lcvaux -Wl,-rpath,/usr/local/lib 

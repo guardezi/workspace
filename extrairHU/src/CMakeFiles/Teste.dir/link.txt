@@ -1,0 +1,1 @@
+/usr/bin/gcc     CMakeFiles/Teste.dir/main.o  -o Teste -rdynamic -L/usr/local/lib -lcxcore -lcv -lml -lhighgui -lcvaux -Wl,-rpath,/usr/local/lib 

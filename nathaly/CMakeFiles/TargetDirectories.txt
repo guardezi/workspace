@@ -1,0 +1,1 @@
+/home/guardezi/Dropbox/UFPR/workspace/nathaly/CMakeFiles/opencvHU.dir

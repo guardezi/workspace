@@ -1,0 +1,111 @@
+#ifdef _CH_
+#pragma package <opencv>
+#endif
+
+#ifndef _EiC
+#include "cv.h"
+#include "highgui.h"
+#include <opencv2/imgproc/imgproc_c.h>
+#include <stdio.h>
+#include <stdlib.h>
+#endif
+
+#define ARRAY  1
+
+
+const char *VENTANA="Blob detection";
+
+IplImage* imagen;
+IplImage* roi;
+IplImage* smooth;
+IplImage* threshold;
+IplImage* open_morf;
+IplImage* blobResult;
+IplImage* img_contornos;
+CvMoments moments;
+CvHuMoments humoments;
+CvSeq* contour;
+CvSeq* contourLow;
+
+int main( int argc, char** argv )
+{
+	srand ( time(NULL) );
+	if(argc >= 2 ){
+		char* filename= argv[1];
+		imagen=cvLoadImage(filename,0);
+	}
+
+
+	threshold= cvCreateImage(cvSize(imagen->width, imagen->height), IPL_DEPTH_8U, 1);
+
+	cvCopyImage(imagen,threshold);
+
+	cvSmooth(threshold, threshold, CV_GAUSSIAN, 3, 0, 0, 0);
+	cvThreshold(threshold, threshold, 0, 255, CV_THRESH_BINARY_INV);
+	cvDilate(threshold, threshold, NULL,5);
+	cvErode(threshold, threshold, NULL,5);
+
+
+
+
+	IplImage *img1 = cvCreateImage(cvSize(threshold->width/2,threshold->height/2),threshold->depth,threshold->nChannels);
+	IplImage *img2 = cvCreateImage(cvSize(threshold->width/2,threshold->height/2),threshold->depth,threshold->nChannels);
+	IplImage *img3 = cvCreateImage(cvSize(threshold->width/2,threshold->height/2),threshold->depth,threshold->nChannels);
+	IplImage *img4 = cvCreateImage(cvSize(threshold->width/2,threshold->height/2),threshold->depth,threshold->nChannels);
+
+	//ROI|copia|reset
+	cvSetImageROI(threshold,cvRect(0,0,threshold->width/2,threshold->height/2));
+	cvCopyImage(threshold,img1);
+	cvResetImageROI(threshold);
+//	cvNamedWindow("igm1", 1);
+//	cvShowImage("img1",img1);
+
+
+
+
+
+
+	cvSetImageROI(threshold,cvRect(threshold->width/2,0,threshold->width/2,threshold->height/2));
+	cvCopyImage(threshold,img2);
+	cvResetImageROI(threshold);
+//	cvNamedWindow("igm2", 1);
+//	cvShowImage("img2",img2);
+
+
+
+
+
+
+	cvSetImageROI(threshold,cvRect(threshold->width/2,threshold->height/2,threshold->width/2,threshold->height/2));
+	cvCopyImage(threshold,img3);
+	cvResetImageROI(threshold);
+//	cvNamedWindow("igm3", 1);
+//	cvShowImage("img3",img3);
+
+	cvSetImageROI(threshold,cvRect(0,threshold->height/2,threshold->width/2,threshold->height/2));
+	cvCopyImage(threshold,img4);
+	cvResetImageROI(threshold);
+//	cvNamedWindow("igm4", 1);
+//	cvShowImage("img4",img4);
+
+//	cvWaitKey(10000);
+
+	//	calcular os momentos de hu para cada parte da imagem
+	cvMoments(img1, &moments,1);
+	cvGetHuMoments(&moments, &humoments);
+	printf("\n%f %f %f %f %f %f %f ", humoments.hu1, humoments.hu2, humoments.hu3, humoments.hu4, humoments.hu5, humoments.hu6, humoments.hu7);
+
+	cvMoments(img2, &moments,1);
+	cvGetHuMoments(&moments, &humoments);
+	printf("\n%f %f %f %f %f %f %f ", humoments.hu1, humoments.hu2, humoments.hu3, humoments.hu4, humoments.hu5, humoments.hu6, humoments.hu7);
+
+	cvMoments(img3, &moments,1);
+	cvGetHuMoments(&moments, &humoments);
+	printf("\n%f %f %f %f %f %f %f ", humoments.hu1, humoments.hu2, humoments.hu3, humoments.hu4, humoments.hu5, humoments.hu6, humoments.hu7);
+
+	cvMoments(img4, &moments,1);
+	cvGetHuMoments(&moments, &humoments);
+	printf("\n%f %f %f %f %f %f %f ", humoments.hu1, humoments.hu2, humoments.hu3, humoments.hu4, humoments.hu5, humoments.hu6, humoments.hu7);
+
+	return 0;
+}
