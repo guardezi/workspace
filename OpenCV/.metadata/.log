@@ -44,3 +44,13 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp
 !MESSAGE Software being installed: Eclipse Git Team Provider 3.0.1.201307141637-r (org.eclipse.egit.feature.group 3.0.1.201307141637-r)
 !SUBENTRY 2 org.eclipse.equinox.p2.director 4 0 2013-08-29 10:27:48.397
 !MESSAGE Missing requirement: Eclipse Git Team Provider 3.0.1.201307141637-r (org.eclipse.egit.feature.group 3.0.1.201307141637-r) requires 'org.eclipse.core.runtime [3.7.0,4.0.0)' but it could not be found
+!SESSION 2013-08-29 11:53:40.224 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.cdt.core 1 0 2013-08-29 12:06:44.093
+!MESSAGE Indexed 'Novo projeto' (1 sources, 244 headers) in 11,54 sec: 43.727 declarations; 69.564 references; 0 unresolved inclusions; 7 syntax errors; 654 unresolved names (0,57%)
